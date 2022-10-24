@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A bar chart that sorts the y-values by the x-values.",
+    "data": {"url": "https://raw.githubusercontent.com/kevinyangk/3179/main/ass2/data/model.csv"},
+    
+    "height": {"step": 17},
+    "mark": "bar",
+    "width":400,
+    "encoding": {
+      "y": {
+        "field": "air plane",
+        "type": "nominal",
+        "sort": "-x"
+      },
+      "x": {
+        "aggregate": "sum",
+        "field": "number cuush plane",
+        "title": "times for crashes"
+      }
+    }
+  }

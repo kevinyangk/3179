@@ -1,0 +1,17 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {"text": "Air crash history"},
+    "width":600,
+    "height":500,
+    "data": {"url": "https://raw.githubusercontent.com/kevinyangk/3179/main/ass2/data/year.csv"},
+    "mark": {
+        "type": "line"
+        
+
+},
+
+    "encoding": {
+      "y": {"field": "year count", "type": "quantitative"},
+      "x": {"field": "year", "type": "quantitative"}
+    }
+  }
